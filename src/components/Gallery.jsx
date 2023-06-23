@@ -7,7 +7,6 @@ const URL = `https://api.unsplash.com/search/photos?page=1&client_id=${
 }`;
 
 const Gallery = () => {
-  console.log(import.meta.env.VITE_API_KEY);
   const { searchTerm } = useGlobalContext();
   const response = useQuery({
     queryKey: ["images", searchTerm],
