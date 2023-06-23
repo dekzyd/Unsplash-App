@@ -349,12 +349,15 @@ Search Form
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
+  border-top-left-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
 }
 
 .search-form .btn {
   border-radius: 0;
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  margin-left: -5px;
 }
 .search-form .btn:hover {
   background: var(--primary-300);
@@ -376,7 +379,7 @@ Gallery
 }
 
 .image-container .img {
-  height: 10rem;
+  height: 15rem;
 }
 
 @media (min-width: 768px) {
